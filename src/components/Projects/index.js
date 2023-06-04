@@ -3,8 +3,6 @@ import React from 'react';
 import { useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import QrifficLogo from '../../assets/images/qriffic_logo.png'
-import { ParallaxProvider } from 'react-scroll-parallax';
-import { ParallaxBanner } from 'react-scroll-parallax';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import QrifficVideo from '../../assets/images/qriffic video.mp4'
 import Loader from 'react-loaders';
