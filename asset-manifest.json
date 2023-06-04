@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1c0253d1.css",
+    "main.js": "/static/js/main.49d47d4d.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/qriffic video.mp4": "/static/media/qriffic video.416ced6e67509a80b809.mp4",
+    "static/media/Kunal-resume-updated.pdf": "/static/media/Kunal-resume-updated.644b1455e41a73123ba8.pdf",
+    "static/media/connect4-code-image.png": "/static/media/connect4-code-image.b06e61194ebad04ac133.png",
+    "static/media/logo-k.jpg": "/static/media/logo-k.7a8fd9ea69fd84df387b.jpg",
+    "static/media/running_time.png": "/static/media/running_time.064db834f7a46d6e0dec.png",
+    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/logo-s.png": "/static/media/logo-s.bfc9f81846bda5218dab.png",
+    "static/media/qriffic_logo.png": "/static/media/qriffic_logo.be67c036bd67744e4431.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/index.html",
+    "main.1c0253d1.css.map": "/static/css/main.1c0253d1.css.map",
+    "main.49d47d4d.js.map": "/static/js/main.49d47d4d.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c0253d1.css",
+    "static/js/main.49d47d4d.js"
+  ]
+}
