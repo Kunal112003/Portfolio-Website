@@ -1,0 +1,125 @@
+.contact-form{
+    width: 100%;
+    margin-top: 20px;
+
+    ul{
+        padding: 0;
+        margin: 0;
+
+        li{
+            padding: 0;
+            margin: 0;
+            margin-bottom: 10px;
+            list-style: none;
+            overflow: hidden;
+            position: relative;
+            opacity: 0;
+            display: block;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+            clear: both;
+
+        }
+
+        li.half{
+            width: 49%;
+            float: left;
+            margin-left: 2%;
+            clear: none;
+
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+
+    input[type='text'],input[type='email']{
+        width: 100%;
+        border: none;
+        background: #115173;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 3px 20px;
+        font-family: 'microsoft yahei';
+        box-sizing: border-box;
+    }
+
+    textarea{
+        width: 100%;
+        border: none;
+        background: #115173;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 3px 20px;
+        font-family: 'microsoft yahei';
+        box-sizing: border-box;
+        min-height: 150px;
+        
+    }
+
+    .flat-button{
+        color:#ffd700;
+        background: 0 0;
+        font: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 1px solid #ffd700;
+        float: right;
+        border-radius: 4px;
+        font-family: 'microsoft yahei';
+
+    }
+}
+
+
+.info-map{
+    position: absolute;
+    background-color: #000;
+    top: 50px;
+    right:14%;
+    z-index: 999;
+    width: 300px;
+    padding-top: 20px;
+    padding: 20px 20px 20px;
+    color:#fff; 
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 2s;
+    animation-fill-mode: forwards;
+
+    span{
+        font-size: 18px;
+        display: block;
+        padding-top: 20px;
+        color: #ffd700;
+
+    }
+
+}
+
+
+.map{
+    background: rgba(8,253,216,0.1);
+    z-index: 999;
+    width: 600px;
+    height: 300px;
+    right: 50px;
+    top: 300px;
+    position: absolute;
+
+}
+
+.leaflet-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    animation: backInRight 1s 2s;
+    animation-fill-mode: forwards;
+    
+}
