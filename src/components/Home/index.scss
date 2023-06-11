@@ -1,54 +1,73 @@
-.home-page{
-
-    .text-zone{
-        position: absolute;
-        left: 10%;
-        top:50%;
-        transform: translateY(-50%);
-        width: 80%;
-        max-height: 90%;
-
-
+.home-page {
+    .text-zone {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80%;
+      max-height: 90%;
+  
+      @media screen and (max-width: 768px) {
+        /* Adjust positioning for smaller screens */
+        left: 5%;
+        top: 40%;
+        transform: translateY(-40%);
+        width: 90%;
+        max-height: 80%;
+      }
     }
-    h1{
-        color: #fff;
-        font-size: 53px;
-        font-family: 'Coolvetica';
-        font-weight: 400;
-        margin: 0;
-        
-        
+  
+    h1 {
+      color: #fff;
+      font-size: 53px;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      margin: 0;
+  
+      @media screen and (max-width: 768px) {
+        /* Adjust font size for smaller screens */
+        font-size: 36px;
+      }
     }
-
-    h2{
-        color: #8d8d8d;
-        margin-top: 20px;
-        font-weight: 400;
-        font-size: 15px;
-        font-family: 'Microsoft YaHei';
-        letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
+  
+    h2 {
+      color: #8d8d8d;
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 15px;
+      font-family: 'Microsoft YaHei';
+      letter-spacing: 3px;
+      animation: fadeIn 1s 1.8s backwards;
+  
+      @media screen and (max-width: 768px) {
+        /* Adjust font size for smaller screens */
+        font-size: 12px;
+      }
     }
-
-    .flat-button{
-        color: #ffd700;
-        font-size: 11px;
-        font-weight: 400;
-        letter-spacing: 4px;
-        font-family: "Microsoft YaHei";
-        text-decoration: none;
-        padding: 10px 20px;
-        border: 1px solid #ffd700;
-        margin-top: 25px;
-        float:left;
-        white-space: nowrap;
-
-        animation: fadeIn 1s 1.9s backwards;
-
-        &:hover{
-            background-color: #ffd700;
-            color: #333;
-        }
+  
+    .flat-button {
+      color: #ffd700;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      font-family: "Microsoft YaHei";
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 1px solid #ffd700;
+      margin-top: 25px;
+      float: left;
+      white-space: nowrap;
+      animation: fadeIn 1s 1.9s backwards;
+  
+      &:hover {
+        background-color: #ffd700;
+        color: #333;
+      }
+  
+      @media screen and (max-width: 768px) {
+        /* Adjust font size for smaller screens */
+        font-size: 10px;
+      }
     }
-}
-
+  }
+  
