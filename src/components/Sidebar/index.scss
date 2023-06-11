@@ -1,7 +1,7 @@
 .nav-bar {
     background: #181818;
     width: 60px;
-    height: 100vh; /* Change the height to full viewport height */
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,10 +11,10 @@
     @media screen and (max-width: 768px) {
       width: 100%;
       height: auto;
-      transition: transform 0.3s ease-out;
-      transform: translateX(-100%);
+      position: relative;
+      transform: none;
     }
-    
+
     .logo {
       display: block;
       padding: 8px 0;
