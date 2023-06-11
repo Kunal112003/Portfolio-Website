@@ -12,7 +12,11 @@
       width: 100%;
       min-height: initial;
       height: auto;
-      position: relative;
+      position: fixed;
+      left: -60px;
+      top: 0;
+      bottom: 0;
+      transition: left 0.3s ease-out;
     }
   
     .logo {
