@@ -274,6 +274,20 @@
     }
 }
 
+.project4{
+    h16{
+        color: #ffd700;
+        font-size: 50px;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+        margin: 0;
+        position: absolute;
+        left: 10%;
+        top:10%;
+        animation: fadeIn 1s 1.5s backwards;
+    }
+}
+
 
 .centre{
     display: flex;

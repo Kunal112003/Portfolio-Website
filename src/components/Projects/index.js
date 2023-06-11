@@ -297,6 +297,19 @@ const Projects = () => {
                     </div>
                 </ParallaxLayer>
 
+                <ParallaxLayer offset={5} speed={0.2}>
+                    <div className='project4'>
+                        <h16>
+                        <AnimatedLetters
+                                letterClass={letterClass}
+                                strArray={['R', 'E', 'N', 'T', 'A', 'L', ' ', 'D', 'A', 'T', 'A', 'B', 'A', 'S', 'E', ' ', 'S', 'Y', 'S', 'T', 'E', 'M']}
+                                idx={15}
+                            />
+
+                        </h16>
+                    </div>
+                </ParallaxLayer>
+
 
             </Parallax>
         </div>
