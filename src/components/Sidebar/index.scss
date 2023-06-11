@@ -10,10 +10,13 @@
   
     @media screen and (max-width: 768px) {
       width: 100%;
-      height: auto;
-      position: relative;
-      transform: none;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      transition: left 0.3s ease;
     }
+  
 
     .logo {
       display: block;
