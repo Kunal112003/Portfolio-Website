@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import { MapContainer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, Marker } from 'react-leaflet'
 import { TileLayer } from 'react-leaflet'
 
 
