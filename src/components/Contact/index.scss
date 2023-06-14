@@ -20,7 +20,7 @@
         margin: 0;
         margin-bottom: 10px;
         list-style: none;
-        overflow: hidden;
+        // overflow: hidden;
         position: relative;
         opacity: 0;
         display: block;
@@ -114,7 +114,7 @@
   
       @media screen and (max-width: 768px) {
         width: 30%;
-        margin-left: 50px;
+        margin-left: 10%;
         margin-right: 210px;
         margin-bottom: 50px;
       }
