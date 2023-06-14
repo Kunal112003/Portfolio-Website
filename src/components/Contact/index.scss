@@ -1,125 +1,198 @@
-.contact-form{
+.contact-form {
     width: 100%;
     margin-top: 20px;
-
-    ul{
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    ul {
+      padding: 0;
+      margin: 0;
+  
+      li {
         padding: 0;
         margin: 0;
+        margin-bottom: 10px;
+        list-style: none;
+        overflow: hidden;
+        position: relative;
+        opacity: 0;
+        display: block;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+        clear: both;
+  
+      }
+  
+      li.half {
+        width: 49%;
+        float: left;
+        margin-left: 2%;
+        clear: none;
 
-        li{
-            padding: 0;
-            margin: 0;
-            margin-bottom: 10px;
-            list-style: none;
-            overflow: hidden;
-            position: relative;
-            opacity: 0;
-            display: block;
-            animation: fadeInUp 2s 2s;
-            animation-fill-mode: forwards;
-            clear: both;
-
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          margin-left: 0;
         }
-
-        li.half{
-            width: 49%;
-            float: left;
-            margin-left: 2%;
-            clear: none;
-
-            &:first-child{
-                margin-left: 0;
-            }
-        }
-    }
-
-    input[type='text'],input[type='email']{
-        width: 100%;
-        border: none;
-        background: #115173;
-        height: 50px;
-        font-size: 16px;
-        color: #fff;
-        padding: 3px 20px;
-        font-family: 'microsoft yahei';
-        box-sizing: border-box;
-    }
-
-    textarea{
-        width: 100%;
-        border: none;
-        background: #115173;
-        height: 50px;
-        font-size: 16px;
-        color: #fff;
-        padding: 3px 20px;
-        font-family: 'microsoft yahei';
-        box-sizing: border-box;
-        min-height: 150px;
+  
         
-    }
+  
+        &:first-child {
+          margin-left: 0;
+        }
+      }
 
-    .flat-button{
-        color:#ffd700;
-        background: 0 0;
-        font: 11px;
-        letter-spacing: 3px;
-        text-decoration: none;
-        padding: 8px 10px;
-        border: 1px solid #ffd700;
-        float: right;
-        border-radius: 4px;
-        font-family: 'microsoft yahei';
+      
+    
 
     }
-}
+  
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      border: none;
+      background: #115173;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 3px 20px;
+      font-family: 'microsoft yahei';
+      box-sizing: border-box;
 
 
-.info-map{
+      
+  
+      @media screen and (max-width: 768px) {
+        width: 50%;
+        margin-left: 50px;
+        padding: 3px;
+        
+      
+    }
+    }
+
+    
+
+    
+  
+    textarea {
+      width: 100%;
+      border: none;
+      background: #115173;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 3px 20px;
+      font-family: 'microsoft yahei';
+      box-sizing: border-box;
+      min-height: 150px;
+  
+      @media screen and (max-width: 768px) {
+        width: 50%;
+        margin-bottom: 20px;
+        margin-left: 50px;
+      }
+    }
+  
+    .flat-button {
+      color: #ffd700;
+      background: 0 0;
+      font: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #ffd700;
+      float: right;
+      border-radius: 4px;
+      font-family: 'microsoft yahei';
+  
+      @media screen and (max-width: 768px) {
+        width: 50%;
+        margin-left: 50px;
+        margin-right: 210px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  
+  .info-map {
     position: absolute;
     background-color: #000;
     top: 50px;
-    right:14%;
+    right: 14%;
     z-index: 999;
     width: 300px;
     padding-top: 20px;
     padding: 20px 20px 20px;
-    color:#fff; 
+    color: #fff;
     font-family: Helvetica;
     font-size: 18px;
     font-weight: 300;
     opacity: 0;
     animation: fadeIn 1s 2s;
     animation-fill-mode: forwards;
-
-    span{
-        font-size: 18px;
-        display: block;
-        padding-top: 20px;
-        color: #ffd700;
-
+  
+    @media screen and (max-width: 768px) {
+      right: 0;
+      width: 70%;
+      right: 60px;
+      top: 650px;
+      padding: 5px 5px 5px;
+      font-size: 14px;
     }
-
-}
-
-
-.map{
-    background: rgba(8,253,216,0.1);
+  
+    span {
+      font-size: 18px;
+      display: block;
+      padding-top: 20px;
+      color: #ffd700;
+  
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+  
+  .map {
+    background: rgba(8, 253, 216, 0.1);
     z-index: 999;
     width: 600px;
     height: 300px;
     right: 50px;
     top: 300px;
     position: absolute;
+  
+    @media screen and (max-width: 768px) {
+      width: 70%;
+      height: 300px;
+      top: 850px;
+      right: 60px;
+      bottom: 50px;
+      
 
-}
-
-.leaflet-container{
+    }
+  }
+  
+  .leaflet-container {
     width: 100%;
     height: 100%;
     position: relative;
     opacity: 0;
     animation: backInRight 1s 2s;
     animation-fill-mode: forwards;
-    
-}
+  
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: 300px;
+      top: 0;
+      right: 0;
+      
+    }
+  }
+  
