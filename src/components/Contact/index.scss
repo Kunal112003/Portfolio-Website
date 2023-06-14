@@ -113,7 +113,7 @@
       font-family: 'microsoft yahei';
   
       @media screen and (max-width: 768px) {
-        width: 50%;
+        width: 30%;
         margin-left: 50px;
         margin-right: 210px;
         margin-bottom: 50px;
@@ -140,8 +140,8 @@
   
     @media screen and (max-width: 768px) {
       right: 0;
-      width: 70%;
-      right: 60px;
+      width: 50%;
+      right: 20%;
       top: 650px;
       padding: 5px 5px 5px;
       font-size: 14px;
@@ -169,10 +169,10 @@
     position: absolute;
   
     @media screen and (max-width: 768px) {
-      width: 70%;
+      width: 50%;
       height: 300px;
       top: 850px;
-      right: 60px;
+      right: 20%;
       bottom: 50px;
       
 
