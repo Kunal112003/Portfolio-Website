@@ -177,8 +177,12 @@ const Projects = () => {
                     </div>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={2.5} speed={0.7}>
-                    <img src={AIModelImage1} style={{ width: '30%', marginLeft: '60%', marginTop:'1%' }} />
+                <ParallaxLayer offset={2.5} speed={0.7} >
+                    <div className='AIModelImage1'>
+                        <img src={AIModelImage1} style={{ width: '30%', marginLeft: '60%', marginTop:'1%' }} />
+                        
+                    </div>
+                    
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={2.6} speed={0.7}>
