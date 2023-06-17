@@ -9,37 +9,38 @@ import Loader from 'react-loaders';
 import AIModelImage1 from '../../assets/images/connect4-code-image.png'
 import AIModelImage2 from '../../assets/images/map_dijkstra.png'
 import AIModelImage3 from '../../assets/images/running_time.png'
+import { useState } from 'react';
 
 
 const Projects = () => {
-    const [letterClass,setLetterClass] = React.useState('text-animate')
-    
+    const [letterClass, setLetterClass] = React.useState('text-animate');
+
+    // const [disableParallax, setDisableParallax] = useState(false);
+
     useEffect(() => {
         setTimeout(() => {
-            setLetterClass('text-animate-hover')
+            setLetterClass('text-animate-hover');
         }, 3000);
-    },[])
+    }, []);
+
 
 
     return(
-
         <div>
+            <Loader type="ball-zig-zag-deflect" />
 
-            <Loader type="ball-zig-zag-deflect">
+            {/* {!disableParallax && ( */}
+            <Parallax pages={6}>
 
-            </Loader>
-            <Parallax 
-            pages = {6}
-            >
+    
                 <ParallaxLayer offset={0} className='centre'>
-                    
                     <div className="projects">
                         <h1>
-                                <AnimatedLetters
-                                    letterClass={letterClass}
-                                    strArray = {['P','r','o','j','e','c','t','s']}>
-                                    idx ={15}
-                                </AnimatedLetters>
+                            <AnimatedLetters
+                                letterClass={letterClass}
+                                strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
+                                idx={15}
+                            />
                         </h1>
 
                         <div className='text-zone2'>
@@ -177,13 +178,14 @@ const Projects = () => {
                     </div>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={2.5} speed={0.7} >
-                    <div className='AIModelImage1'>
-                        <img src={AIModelImage1} style={{ width: '30%', marginLeft: '60%', marginTop:'1%' }} />
-                        
-                    </div>
-                    
+                <ParallaxLayer offset={2.5} speed={0.7}>
+                <div className='AIModelImage1'>
+                    <img src={AIModelImage1} style={{ width: '30%', marginLeft: '60%', marginTop: '1%' }} />
+
+                </div>
                 </ParallaxLayer>
+
+
 
                 <ParallaxLayer offset={2.6} speed={0.7}>
                     <div className='project2-feat'>
@@ -214,15 +216,22 @@ const Projects = () => {
                     </div>
                 </ParallaxLayer>
 
+                <div className='AIModelImage2'>
                 <ParallaxLayer offset={3} speed={0.2}>
                     <img src={AIModelImage2} style={{ width: '18%', marginLeft: '10%', marginTop:'1%' }} />
                     
                 </ParallaxLayer>
+                </div>
 
+
+
+                <div className='AIModelImage3'>
                 <ParallaxLayer offset={3.2} speed={0.2}>
                     <img src={AIModelImage3} style={{ width: '20%', marginLeft: '29%' }} />
                 
                 </ParallaxLayer>
+
+                </div>
 
                 <ParallaxLayer offset={3.7} speed = {0.5}>
                     <div className='project3'>
@@ -301,7 +310,7 @@ const Projects = () => {
                     </div>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={5} speed={0.2}>
+                {/* <ParallaxLayer offset={5} speed={0.2}>
                     <div className='project4'>
                         <h16>
                         <AnimatedLetters
@@ -312,10 +321,17 @@ const Projects = () => {
 
                         </h16>
                     </div>
-                </ParallaxLayer>
+                </ParallaxLayer> */}
 
 
             </Parallax>
+            {/* )} */}
+
+
+
+
+            
+
         </div>
     )
 }

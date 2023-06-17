@@ -198,6 +198,45 @@
             font-size: 10px;
         }
 
+          
+          
+
+    }
+}
+
+
+.AIModelImage1{
+   
+    @media (max-width: 768px) {
+        
+        margin-top: 70%;
+        animation: fadeIn 1s 1.8s backwards;
+    
+        
+    }
+}
+
+
+.AIModelImage2{
+    
+    @media (max-width: 768px) {
+        display: none;
+
+    
+        
+    }
+}
+
+
+.AIModelImage3{
+   
+    @media screen and (max-width: 768px) {
+        
+        display: none;
+    
+        
+    
+        
     }
 }
 
@@ -221,6 +260,7 @@
 
         @media (max-width: 768px) {
             left : 60%;
+            top: 60%;
             
             font-size: 10px;
         }
@@ -247,15 +287,15 @@
 
         @media (max-width: 768px) {
             left : 60%;
+            top: 60%;
             
             font-size: 10px;
         }
     }
-
-    
-      
-      
+  
 }
+
+
 
 
 .project3{
