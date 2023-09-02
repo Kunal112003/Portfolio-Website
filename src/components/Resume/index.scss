@@ -2,11 +2,16 @@
 
     //make full page scrollable
     min-height: 100vh;
-    position: relative;
+    // width: 100%;
+    
+    // position: relative;
     overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    // -webkit-overflow-scrolling: touch;
+    // -ms-overflow-style: none;
+    // scrollbar-width: none;
+
+    
+
 
 
     min-width: auto;
@@ -78,6 +83,7 @@
             width: 90%;
             left: 15%;
             top: 20%;
+            bottom: 10%;
             max-height: 70%;
             // make document background white
             background-color: #fff;
@@ -85,6 +91,9 @@
         }
         
     }
+
+    
+
 
     
 }

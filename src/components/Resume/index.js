@@ -1,6 +1,6 @@
 import './index.scss'
 import React from 'react';
-import ResumeDocument from '../../assets/resume/Kunal-resume-updated.pdf';
+import ResumeDocument from '../../assets/resume/Kunal Rao.pdf';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect } from 'react';
 
@@ -21,10 +21,15 @@ const Resume = () => {
                             idx ={15}
                         </AnimatedLetters>
             </h1>
+
+
             
             {/* display document */}
             <div className="resume__document">
-                <embed src={`${ResumeDocument}?#toolbar=0`} type="application/pdf" width="96%" height="1000px" />
+                <embed src={`${ResumeDocument}?#toolbar=0`} type="application/pdf" width="96%" height="1000px" 
+        
+                 />
+                
             </div>
         </div>
     )

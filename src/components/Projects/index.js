@@ -310,18 +310,45 @@ const Projects = () => {
                     </div>
                 </ParallaxLayer>
 
-                {/* <ParallaxLayer offset={5} speed={0.2}>
+                <ParallaxLayer offset={5} speed={0.2}>
                     <div className='project4'>
                         <h16>
                         <AnimatedLetters
                                 letterClass={letterClass}
-                                strArray={['R', 'E', 'N', 'T', 'A', 'L', ' ', 'D', 'A', 'T', 'A', 'B', 'A', 'S', 'E', ' ', 'S', 'Y', 'S', 'T', 'E', 'M']}
+                                strArray={['E', 'X', 'P', 'E', 'N', 'S', 'E', '', 'M', 'A', 'N', 'A', 'G', 'E', 'R', ' ', 'A', 'P', 'P']}
                                 idx={15}
+
+        
                             />
 
+
                         </h16>
+
+                        <h17>
+                            <li>
+                            I have developed an expense manager app that allows users to track their expenses and manage their finances. This app is built using React Native and Firebase, with a sleek and user-friendly design.
+                                
+                            </li>
+
+                            <li>
+                            The app features a simple and intuitive interface, with a dashboard that displays the user's current balance and a list of their transactions. Users can add new transactions and specify the type of transaction (income or expense), the amount, and the date. The app also allows users to view their transaction history and filter transactions by date.
+
+                            </li>
+
+                            <li>
+                            The app utilizes Firebase to store user data, allowing users to access their transaction history from any device. It also incorporates authentication features, enabling users to securely log in and protect their data. The app is designed to be scalable, with the potential to add new features such as budgeting tools and data visualization.
+
+                            </li>
+
+                            <li>
+
+                            With its sleek design and intuitive interface, the expense manager app provides a convenient way for users to track their expenses and manage their finances. It showcases my skills in React Native and Firebase and demonstrates my ability to develop user-friendly mobile applications.
+                            </li>
+
+
+                        </h17>
                     </div>
-                </ParallaxLayer> */}
+                </ParallaxLayer>
 
 
             </Parallax>
