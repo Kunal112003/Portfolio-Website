@@ -8,6 +8,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
+import Experience from './components/Experience';
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -35,8 +36,8 @@ const particlesLoaded = useCallback(async container => {
         <Route path='contact' element={<Contact/>} />
         <Route path = 'projects' element = {<Projects/>} />
         <Route path = 'resume' element = {<Resume/>} />
-          
-        />
+        <Route path = 'experience' element = {<Experience/>} />
+        
 
       </Route>
     

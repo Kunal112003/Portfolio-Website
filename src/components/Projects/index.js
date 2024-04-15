@@ -10,6 +10,8 @@ import AIModelImage1 from '../../assets/images/connect4-code-image.png'
 import AIModelImage2 from '../../assets/images/map_dijkstra.png'
 import AIModelImage3 from '../../assets/images/running_time.png'
 import { useState } from 'react';
+import ExpenseAppImage1 from '../../assets/images/pie-chart.jpg'
+import ExpenseAppImage2 from '../../assets/images/bar-chart.png'
 
 
 const Projects = () => {
@@ -136,7 +138,7 @@ const Projects = () => {
 
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={1.8} speed={0.4}>
+                <ParallaxLayer offset={1.88} speed={0.4}>
                     <div className='project1-video'>
 
                         <video src = {QrifficVideo} style={{marginLeft :'20%',height:'30%',width:'18%'}}></video>
@@ -178,7 +180,7 @@ const Projects = () => {
                     </div>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={2.5} speed={0.7}>
+                <ParallaxLayer offset={2.55} speed={0.7}>
                 <div className='AIModelImage1'>
                     <img src={AIModelImage1} style={{ width: '30%', marginLeft: '60%', marginTop: '1%' }} />
 
@@ -268,49 +270,8 @@ const Projects = () => {
                     </div>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={4.3} speed={0.5}>
-                    <div className='website'>
-                        <h14>
-                        <AnimatedLetters
-                                    letterClass={letterClass}
-                                    strArray = {['P','O','R','T','F','O','L','I','O',' ','W','E','B','S','I','T','E']}>
-                                    idx ={15}
-                        </AnimatedLetters>
-                        </h14>
-                    </div>
-                </ParallaxLayer>
-
+                
                 <ParallaxLayer offset={4.3} speed={0.3}>
-                    <div className='website-intro'>
-                        <h15>
-
-                        <ul>
-                        <li>
-                        I have developed a dynamic and visually appealing React-based web portfolio that showcases my skills, projects, and accomplishments. This web portfolio serves as a comprehensive showcase of my expertise in web development and demonstrates my proficiency in React, HTML, CSS, and JavaScript.
-                        </li>
-                        
-                        <li>
-                        The portfolio features a modern and user-friendly design, with smooth navigation and interactive elements. It provides a seamless browsing experience for visitors, allowing them to explore different sections and learn more about my background, experience, and technical abilities.
-                        </li>
-
-                        <li>
-                        The portfolio showcases a curated selection of my projects, highlighting their key features, technologies used, and outcomes achieved. 
-                        Additionally, the web portfolio incorporates sections for my skills, education, and work experience, providing a comprehensive overview of my professional background. It also includes a contact form, enabling visitors to easily get in touch with me for potential collaborations, job opportunities, or inquiries.
-                        
-                        </li>
-
-                        <li>
-                        With its sleek design, informative content, and seamless user experience, my React web portfolio effectively showcases my abilities and achievements in a visually appealing and engaging manner. It serves as a powerful tool to create a lasting impression and attract potential clients, employers, and collaborators.
-                        </li>
-
-                        </ul>
-                        
-                        </h15>
-
-                    </div>
-                </ParallaxLayer>
-
-                <ParallaxLayer offset={5} speed={0.2}>
                     <div className='project4'>
                         <h16>
                         <AnimatedLetters
@@ -349,6 +310,20 @@ const Projects = () => {
                         </h17>
                     </div>
                 </ParallaxLayer>
+
+
+               {/* add the images of the project from images folder */}
+                <ParallaxLayer offset={4.7} speed={0.3}>
+                    <div className='project4-image1'>
+                        <img src={ExpenseAppImage1} style={{ width: '30%', marginLeft: '50%', marginTop: '20%' }} />
+                        </div>
+                    </ParallaxLayer>
+
+                    <ParallaxLayer offset={5.1} speed={0.3}>
+                        <div className='project4-image2'>
+                            <img src={ExpenseAppImage2} style={{ width: '30%',marginLeft: '10%', marginRight: '30%', marginTop: '-20%'}} />
+                        </div>
+                    </ParallaxLayer>
 
 
             </Parallax>

@@ -4,7 +4,7 @@ import './index.scss';
 import LogoK from '../../assets/images/logo-k.jpg';
 import LogoSubtitle from '../../assets/images/logo_sub_kunal.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faPortrait, faProjectDiagram, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome, faPortrait, faProjectDiagram, faUser,faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -46,6 +46,12 @@ const Sidebar = () => {
         <NavLink exact activeClassName="active" className="contact-link" to="/contact">
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+
+        <NavLink exact activeClassName="active" className="experience-link" to="/experience">
+          <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
+        </NavLink>
+        
+
 
         
       </nav>
