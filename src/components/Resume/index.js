@@ -1,6 +1,7 @@
 import './index.scss'
 import React from 'react';
-import ResumeDocument from '../../assets/resume/Kunal Rao.pdf';
+// import ResumeDocument from '../../assets/resume/Kunal Rao.pdf';
+import ResumeImage from '../../assets/resume/resume.png';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect } from 'react';
 
@@ -26,9 +27,10 @@ const Resume = () => {
             
             {/* display document */}
             <div className="resume__document">
-                <embed src={`${ResumeDocument}?#toolbar=0`} type="application/pdf" width="96%" height="1000px" 
-        
-                 />
+                <img src={ResumeImage} alt="resume" />
+                {/* <a href={ResumeDocument} download="Kunal Rao Resume">Download</a> */}
+
+
                 
             </div>
         </div>

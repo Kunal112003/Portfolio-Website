@@ -1,109 +1,58 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
-import { useState } from 'react'
-import { useEffect } from 'react'
-import {  faCss3, faGit,  faJava, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import AnimatedLetters from '../AnimatedLetters';
+import './index.css';
+import { useState, useEffect } from 'react';
+import { faCss3, faGit, faJava, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import Loader from 'react-loaders';
+import kunalPic from './kunalpic.jpg'
 
+const About = () => {
 
-const About =() => {
+    const [letterClass, setLetterClass] = useState('text-animate');
 
-
-    const [letterClass,setLetterClass] = useState('text-animate')
-    
     useEffect(() => {
         setTimeout(() => {
-            setLetterClass('text-animate-hover')
+            setLetterClass('text-animate-hover');
         }, 3000);
-    },[])
-    
-    return(
-        <Parallax pages={2}>
+    }, []);
 
-        <ParallaxLayer offset={0} className='centre'>
+    return (
         <div className="container about-page">
-                        <div className='text-zone'>
-                            <h1>
-                                <AnimatedLetters
-                                    letterClass={letterClass}
-                                    strArray = {['A','b','o','u','t',' ','M','e']}>
-                                    idx ={15}
-                                </AnimatedLetters>
-                            </h1>
+            <div className="about-header">
+                <div className="about-avatar">
+                    <img src={kunalPic} alt="Kunal Rao" />
+                </div>
+                <div className="about-links">
+                    <a href="https://github.com/yourusername">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+                </div>
+            </div>
+            <div className='about-section'>
+            <div className="about-content">
+                <h2>About Me</h2>
+                <p>Greetings! I'm Kunal Rao, a passionate and dedicated software engineer with a knack for solving complex problems and creating innovative solutions. Currently pursuing a Bachelor of Science in Computer Science at the University of Alberta, I'm deeply immersed in the world of technology, constantly exploring new avenues to expand my skills and make meaningful contributions to the field.</p>
 
-                            <p>
-                            
+                <h3>Background</h3>
+                <p>My journey into the realm of computer science began with a profound curiosity about how technology shapes our world. Through my academic pursuits and hands-on experiences, I've delved into various domains, from data structures and algorithms to machine learning and software engineering. This diverse background has equipped me with a versatile skill set and a deep understanding of foundational principles, enabling me to tackle challenges with confidence and creativity.</p>
 
-                            Hello and welcome to my portfolio website!
+                <h3>Professional Experience</h3>
+                <p>As a software engineer at S.P.E.A.R (Space Exploration Alberta Robotics), I've had the privilege of working on cutting-edge projects that push the boundaries of exploration and innovation. From spearheading the development of Mars rover software to enhancing autonomy through advanced sensor integration and computer vision, I've been at the forefront of pioneering technologies that redefine what's possible in space exploration.</p>
 
-                            I'm a highly motivated Year 3 Computer Science student currently seeking an internship in software development. With a solid foundation in computer science principles and a passion for technology, I am eager to apply my skills and knowledge to contribute to a dynamic team and gain practical experience in the field.
+                <h3>Projects and Contributions</h3>
+                <p>In addition to my professional endeavors, I'm passionate about leveraging my skills to make a positive impact on society. One notable project is Shelter For Women, where I led the Agile development of an intervention plan system to support women in need. By implementing personalized features and real-time communication tools, we were able to significantly enhance the support network and empower individuals to achieve their goals.</p>
 
-                            Here are some key points about me:
+                <h3>Technical Expertise</h3>
+                <p>My proficiency spans across a wide array of languages, frameworks, and developer tools. Whether it's crafting AI models for game-solving, designing Android applications with seamless user experiences, or architecting robust backend systems, I'm well-versed in leveraging the right tools and technologies to bring ideas to life.</p>
 
-                            <ul>
-                            <li>Proficient in SQL, Python, C, Java, JavaScript, and MySQL.</li>
-                            <li>Experienced in Full Stack Mobile and Web Development and Database Development.</li>
-                            <li>Strong understanding of computer science principles.</li>
-                            <li>Eager to learn, grow, and make a meaningful impact in a professional environment.</li>
-                            </ul>
 
-                            I believe in continuous learning and keeping up with the latest industry trends and advancements. I am always eager to expand my skillset and stay updated with emerging technologies to ensure that I can deliver innovative solutions.
-                            <br/>
-                            What sets me apart is my enthusiasm for teamwork and collaboration. I enjoy working in diverse environments where I can learn from others and contribute my own ideas. 
-                            I am a proactive learner and adapt quickly to new challenges, which allows me to thrive in fast-paced and ever-changing situations.
-                            <br/>
-                            I am actively seeking an internship opportunity where I can learn, grow, and make a meaningful impact in a professional environment. I am excited to contribute to a team that shares my passion for technology and embraces creativity and innovation.
-                            <br/>
-                            Thank you for visiting my portfolio. Please explore my projects and feel free to reach out to me for any collaboration or internship opportunities. I look forward to connecting with you!
+                <h3>Get in Touch</h3>
+                <p>If you're interested in collaborating on exciting projects, discussing ideas, or simply sharing experiences, I'd love to connect! Feel free to reach out via email or connect with me on LinkedIn. Let's embark on a journey of exploration and innovation together!</p>
+            </div>
 
-                            
-
-                            </p>
-
-                        </div>
-
-                        <div className = 'stage-cube-cont'>
-                            <div className='cubespinner'>
-                                <div className='face1'>
-                                    <FontAwesomeIcon icon={faPython} color= "#EFD81D" />
-                                </div>
-
-                                <div className='face2'>
-                                    <FontAwesomeIcon icon={faJava} color= "#F06529" />
-                                </div>
-
-                                <div className='face3'>
-                                    <FontAwesomeIcon icon={faCss3} color= "#28A4D9" />
-                                </div>
-
-                                <div className='face4'>
-                                    <FontAwesomeIcon icon={faReact} color= "#5ED4F4" />
-                                </div>
-
-                                <div className='face5'>
-                                    <FontAwesomeIcon icon={faJsSquare} color= "#EFD81D" />
-                                </div>
-
-                                <div className='face6'>
-                                    <FontAwesomeIcon icon={faGit} color= "#EC4E28" />
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <Loader type = "ball-zig-zag-deflect">
-
-                    </Loader>
-        </ParallaxLayer>
-
-           
-
-                </Parallax>
-           
+            </div>
         
-    )
+        </div>
+    );
 }
 
-export default About
+export default About;
